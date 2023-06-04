@@ -12,6 +12,8 @@
 
     <header>
         <a href="#" class="brand">Viagem</a>
+        <div class="menu-btn"></div>
+
         <div class="navigation">
             <div class="navigation-items">
                 <a href="#">Inicio</a>
@@ -24,10 +26,31 @@
     </header>
 
     <section class="home">
+        <video class="video-slide" src="./img/video1.mp4" autoplay muted loop></video>
+
         <div class="content">
+        <h1>Maravilhosa. <br><span>VERONA</span> </h1>
+        <p>Verona é uma cidade da região de Vêneto, no norte da Itália, com um bairro medieval antigo erguido às margens do rio Ádige. Ela é famosa por ter sido cenário da peça "Romeu e Julieta", de Shakespeare. A chamada "Casa de Julieta" é uma construção residencial do século XIV, com uma pequena varanda voltada para um pátio. Arena de Verona é um enorme anfiteatro romano do século I, que atualmente sedia concertos e grandes apresentações de ópera, e também a cidade favorita de minha amada Leticia Almeida Cobucci.</p>
+        <a href="#">MAIS INFORMAÇÕES</a>
+        </div>
+
+        <div class="media-icons">
+            <a href="#"><i class ="fab fa-facebook"></i></a>
+            <a href="#"><i class ="fab fa-instagram"></i></a>
+            <a href="#"><i class ="fab fa-twitter"></i></a>
 
         </div>
     </section>
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+        });
+    </script>
+
+
 
 </body>
 </html>
